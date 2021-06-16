@@ -1,0 +1,16 @@
+#Linguagem Utilizada para Desenvolver a Aplicação
+language: python
+
+# Versão que a aplicação suporta.
+python:
+  - "3.6.3"
+
+script: pytest test.py
+after_script:
+notifications:
+  recipients:
+    - danillo_meira10@hotmail.com
+deploy:
+  provider: heroku
+  api-key: $HEROKU_API_KEY
+  app: dc-linux
