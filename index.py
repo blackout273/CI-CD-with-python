@@ -4,5 +4,5 @@ def app(environ, start_response):
     headers=[('Content-type', 'text/html')]
     start_response(status,headers)
     return [data]
-def test_logico(x,y):
+def somar(x,y):
     return (x+y)
